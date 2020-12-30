@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>常用函数2</title>
+    <script type="text/javascript" src="Jquery3.5.1.js"></script>
+    <script type="text/javascript">
+        $(function (){
+          $("#btn1").click(function (){
+              $("#s1").remove();//删除父对象以及子对象。所有整个下拉列表都被删除了
+          })
+            $("#btn2").click(function (){
+                $("#s2").empty();//删除子对象。保留父对象
+            })
+            $("#btn3").click(function(){
+                $("#s2").append("<option value='C++'>C++</option>");//可以增加
+            })
+            $("#btn4").click(function(){
+                alert($("#s2").html());/*输出的是格式<option value="java">java</option>
+                <option value="sql">sql</option>
+                <option value="js">javaScript</option*/
+                alert($("#s2").text())
+            })
+        })
+    </script>
+</head>
+<body>
+<select id="s1">
+    <option value="老虎">老虎</option>
+    <option value="狮子">狮子</option>
+    <option value="大象">大象</option>
+</select>
+<select id="s2">
+    <option value="java">java</option>
+    <option value="sql">sql</option>
+    <option value="js">javaScript</option>
+</select>
+<button id="btn1">删除下拉列表</button>
+<button id="btn2">只删除下拉列表的值</button>
+<button id="btn3">增加下拉列表</button>
+<button id="btn4">html</button>
+</body>
+</html>

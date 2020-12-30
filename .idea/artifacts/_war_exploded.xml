@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="书城项目:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="书城项目" />
+          <element id="dir-copy" path="$PROJECT_DIR$/jar包/mysql-connector-java-8.0.22" />
+          <element id="dir-copy" path="$PROJECT_DIR$/../Program Files/apache-tomcat-9.0.39/lib/servlet-api" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$PROJECT_DIR$/jar包/jackson-annotations-2.9.9.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/jar包/jackson-core-2.9.9 .jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/jar包/jackson-databind-2.9.9.jar" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="书城项目/web/Web" />
+    </root>
+  </artifact>
+</component>

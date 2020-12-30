@@ -1,0 +1,17 @@
+1.JSP运行原理
+	http服务器将JSP文件编辑到一个Servlet接口实现类
+	将这个接口实现类编译为class文件
+	http服务器负责创建这个class的实例对象，这个实例对象就是servlet实例对象
+	http服务器通过实例对象调用service方法，将jsp文件内容写入到响应体
+2.EL表达式
+	命令格式：${作用域对象名.属性名}
+	命令作用：EL表达式是EL工具包的一种特殊格式{表达式命令格式}
+		是在JSP文件上使用
+		负责在JSP文件上将作用域对象中的共享数据写入响应体中
+
+	EL表达式的作用域对象
+		ServletContext
+		HttpSesstion
+		HttpServletRequest
+		PageContext(这个是servlet没有介绍的）当前页作用域对象
+		是JSP独有的，

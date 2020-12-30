@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单选择器</title>
+    <script type="text/javascript" src="Jquery3.5.1.js">
+    </script>
+    <script type="text/javascript">
+        function fun1(){
+            $(":text").val("hello");
+        }
+        function fun2(){
+            var obj=$(":radio")
+            alert(obj.val())
+        }
+       /*$( function (){
+            $("#btn").click(function (){
+               $(":checkbox")[0].checked("true");
+            })
+       })*/
+    </script>
+</head>e
+<body>
+<form>
+    <input type="text" id="text1"><br><br>
+    <input type="text" id="text2"><br><!--会给所有的text赋值-->
+    <input type="button" value="给text赋值" onclick="fun1()">
+    <input type="radio" value="man">男
+    <input type="radio" value="woman">女<br>
+    <input type="button" value="读取单选钮的value" onclick="fun2()"><br>
+    <input type="checkbox" value="bike">自行车<br>
+    <input type="checkbox" value="football">足球<br>
+    <input type="checkbox" value="basketball">篮球<br>
+    <input type="button" value="全选" id="btn">
+</form>
+</body>
+</html>

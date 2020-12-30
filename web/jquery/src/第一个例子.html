@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>第一个例子</title>
+    <script type="text/javascript" src="Jquery3.5.1.js">/*引用Jquery*/
+        $(document).ready(function (){
+            /*$是Jquery中的函数名称，document是函数的参数，作用是将dom对象变成jquery类库可以使用的对象
+            * readys是jquery当中的函数，是准备的意思，当dom对象加载完成之后会执行read函数的内容
+            * function()表示页面加载完毕要执行的功能*/
+            alert("hello world")
+        })
+        $(function (){
+            alert("hello");
+        })
+    function fun(){
+            alert("hello")
+    }
+    fun();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

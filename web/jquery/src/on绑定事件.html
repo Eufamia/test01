@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>on绑定事件</title>
+    <style type="text/css">
+        div{
+            background-color: aqua;
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+    <script type="text/javascript" src="Jquery3.5.1.js"></script>
+    <script type="text/javascript">
+        $(function (){
+            $("#btn").click(function(){
+                $("#mydiv").append("<input type='button' value='新增' id='mybtn'>")
+               /* $("#mybtn").click(function (){
+                    alert("hello")给新加的button绑定事件
+                })*/
+                $("#mybtn").on("click",function (){
+                    alert("hello world")
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+<div id="mydiv" >我是一个div<br>
+我是一个div<br>
+我是一个div</div>
+<button id="btn">新增按钮</button>
+</body>
+</html>

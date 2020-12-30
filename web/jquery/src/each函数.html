@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>each函数</title>
+    <script type="text/javascript" src="Jquery3.5.1.js"></script>
+    <script type="text/javascript">
+        // student["id":"111",
+        // "name":"zhangsan"]
+        $(function (){
+            $("#btn1").click(function (){
+                var arr=$(":text");
+               /* $.each(arr,function (i,n){
+                    alert("i--->"+i+",n--->"+n.value);
+                })*///这种是可以循环的
+
+                //循环jquery对象
+                arr.each(function (index,element){
+                    alert("i--->"+index+",n--->"+element.value)
+                })//这两种方法是一样的
+            })
+            $("btn2").click(function (){
+
+            })
+        })
+    </script>
+</head>
+<body>
+<input type="text" id="text1" value="text1"><br><br>
+<input type="text" id="text2" value="text2" ><br><br>
+<input type="text" id="text3" value="text3"><br><br>
+<input type="text" id="text4" value="text4" ><br><br>
+<input type="button" id="btn1" value="循环dom数组">
+<input type="button" id="btn1" value="循环dom数组">
+</body>
+</html>

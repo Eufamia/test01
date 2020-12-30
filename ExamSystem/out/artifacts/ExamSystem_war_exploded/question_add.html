@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>试题添加</title>
+</head>
+<body>
+<form action="questionAdd" method="get">
+    <table align="center">
+        <tr>
+            <td align="right">题目:</td>
+            <td><input type="text" name="title"></td>
+        </tr>
+        <tr>
+            <td align="right">A:</td>
+            <td><input type="text" name="optionA"></td>
+        </tr>
+        <tr>
+            <td align="right"> B:</td>
+            <td><input type="text" name="optionB"></td>
+        </tr>
+        <tr>
+            <td align="right">C:</td>
+            <td><input type="text" name="optionC"></td>
+        </tr>
+        <tr>
+            <td align="right">D:</td>
+            <td><input type="text" name="optionD"></td>
+    </tr>
+        <tr>
+            <td align="right">正确答案:</td>
+            <td><input type="radio" name="answer" value="A">A
+                <input type="radio" name="answer" value="B">B
+                <input type="radio" name="answer" value="C">C
+                <input type="radio" name="answer" value="D">D</td>
+        </tr>
+        <tr>
+            <td  align="center" colspan="2"><input type="submit" value="增加">
+                <input type="reset"value="清空"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

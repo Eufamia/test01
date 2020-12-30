@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function doAjax(){
+
+
+
+            var name=document.getElementById("name").value;
+            var weight=document.getElementById("weight").value;
+            var height=document.getElementById("height").value;
+            alert(name);
+            var info="name="+name+"&weight="+weight+"=&height"+height;
+            alert(info);
+
+        }
+
+    </script>
+</head>
+<body>
+<div>
+    姓名：<input type="text" id="name"><br>
+    身高：<input type="text" id="height"><br>
+    体重：<input type="text" id="weight"><br>
+    <input type="button" value="bmi的计算" onclick="doAjax()">
+</div>
+</body>
+</html>

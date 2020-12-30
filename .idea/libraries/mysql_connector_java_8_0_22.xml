@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="mysql-connector-java-8.0.22">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/jar包/jackson-annotations-2.9.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jar包/jackson-core-2.9.9 .jar!/" />
+      <root url="jar://$PROJECT_DIR$/jar包/jackson-databind-2.9.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jar包/mysql-connector-java-8.0.22.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dom-->Jquery</title>
+    <script type="text/javascript" src="Jquery3.5.1.js"></script>
+    <script type="text/javascript" >
+        function btnClick(){
+            var obj=document.getElementById("btn");
+            //alert(obj.value);
+            var $jobj=$(obj);
+            alert($jobj.val());
+        }
+    </script>
+</head>
+<body>
+<input type="button" id="btn" value="我是按钮" onclick="btnClick()">
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基本选择器</title>
+    <style type="text/css">
+        div{
+            background-color: greenyellow;
+            width: 200px;
+            height: 200px;
+        }
+        .style{
+            background-color: black;
+        }
+    </style>
+
+    <script type="text/javascript" src="Jquery3.5.1.js"></script>
+    <script type="text/javascript" >
+        function fun1(){
+            var obj=$("#div");
+            obj.css("background-color","red");
+        }
+        function fun2(){
+            var obj=$(".style");
+            obj.css("background-color","blue")
+        }
+        function fun3(){
+            var obj=$("div");//所以的div都会被改变
+            obj.css("background-color","yellow")
+        }
+        function fun4(){
+            var obj=$("*");
+            obj.css("background-color","green")
+        }
+    </script>
+</head>
+<body>
+<div id="div">我是一个div</div>
+<input type="button" value="获取id是div的dom对象" onclick="fun1()">
+
+<br>
+<div class="style">我是样式的div</div><!--是可以自定样式，style就是这个样式的名字-->
+<input type="button" value="样式选择器" onclick="fun2()">
+<br>
+<div>我是没有id,class的div</div>
+<input type="button" value="获取id是div的dom对象" onclick="fun3()">
+<span>我是一个span标签</span>
+<input type="button" value="全部选择器" onclick="fun4()">
+</body>
+</html>

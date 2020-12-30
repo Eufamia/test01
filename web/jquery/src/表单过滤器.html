@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单过滤器</title>
+    <script type="text/javascript" src="Jquery3.5.1.js">
+    </script>
+    <script type="text/javascript">
+        $(function(){
+            $("#btn1").click(function (){
+               var obj= $(":text:enabled");
+               //设置Jquery数组中所有value的值
+                obj.val("hello");
+            })
+            $("#btn2").click(function (){
+                 var obj=$(":checkbox:checked");
+                 for(var i=0;i<obj.length;i++){
+                     alert(obj[i].value);
+                 }
+            })
+            $("#btn3").click(function (){
+                var obj=$("select>option:selected");
+                alert(obj.val());
+            })
+        })
+
+    </script>
+</head>
+<body>
+<input type="text" id="text1" value="text1"><br><br>
+<input type="text" id="text2" value="text2" disabled><br><br>
+<input type="text" id="text3" value="text3"><br><br>
+<input type="text" id="text4" value="text4" disabled><br><br>
+<input type="button" value="所有可用的text设置为hello" id="btn1"><br>
+<p>复选框</p>
+<input type="checkbox" value="bike">自行车<br>
+<input type="checkbox" value="football" checked>足球<br>
+<input type="checkbox" value="basketball" checked>篮球<br>
+<input type="button" value="显示被选择复选框的值" id="btn2"><br>
+<p>下拉框</p>
+<select id="lang">
+    <option value="java">java语言</option>
+    <option value="java" selected>javaScript语言</option>
+    <option value="java">sql语言</option>
+</select>
+<input type="button" value="显示下拉列表框被选择的值" id="btn3"><br>
+</body>
+</html>
